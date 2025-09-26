@@ -31,5 +31,5 @@ runs:
       with:
         context: .
         push: true
-        tags: ghcr.io/${{ github.repository }}:latest,ghcr.io/${{ github.repository }}:v${{ inputs.image-version }}
+        tags: ghcr.io/${{ github.repository }}:latest,ghcr.io/${{ github.repository }}:${{ inputs.image-version }}
         labels: org.opencontainers.image.source=https://github.com/${{ github.repository }}
